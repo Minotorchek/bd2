@@ -107,7 +107,7 @@ insert into music
 values (14,'SAD',5,'2:47');
 
 insert into music
-values (15,'Сектор газа',6,'3:39');
+values (15,'my love',6,'3:39');
 
 insert into compilations
 values (1,'camp1',3,2,'2022-01-03');

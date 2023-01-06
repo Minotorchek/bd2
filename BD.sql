@@ -22,10 +22,6 @@ create table if not exists alboms (
 	date1 DATE not null
 );
 
-drop table compilations;
-
-drop table interval3;
-
 create table if not EXISTS interval2 (
 	performers_id INTEGER REFERENCES performers(id),
 	performer_id INTEGER REFERENCES alboms(id),
