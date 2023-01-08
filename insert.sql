@@ -64,9 +64,6 @@ values (7,'Продавец кошмаров','2006.12.05');
 insert into alboms
 values (8,'Перегрузка','2020.04.27');
 
-
-drop table music;
-
 insert into music 
 values (1,'Весна','343');
 

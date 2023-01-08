@@ -44,8 +44,6 @@ CREATE TABLE IF NOT EXISTS interval3 (
 	CONSTRAINT z PRIMARY KEY (music_id, compilations_id)
 );
 
-drop table compilations;
-
 
 
 
