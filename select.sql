@@ -54,14 +54,14 @@ left join performers p on p.id = i2.performers_id
 where p.name1 like '%%Джарахов%%'
 order by c.compilationname;
 
-select a.name
+select 	a.name
 from alboms as a
 left join interval2 i2 on a.id = i2.albom_id
 left join performers p on p.id = i2.performers_id
 left join interval1 i1 on p.id = i1.performers_id
 left join genre g on g.id = i1.genre_id
 group by a.name
-having count(distinct a.name) > 1
+having count(distinct g.genre) > 1
 order by a.name;
 
 select m.music
@@ -82,13 +82,13 @@ select distinct a.name
 from alboms as a
 left join music m on m.id = a.id
 where m.id in (
-    select albom_id
-    from interval2
-    group by albom_id
+    select id
+    from music
+    group by id
     having count(id) = (
         select count(id)
         from music
-        group by albom_id
+        group by id
         order by count
         limit 1
     )

@@ -109,6 +109,9 @@ values (14,'SAD','167');
 insert into music
 values (15,'my love','219');
 
+insert into music 
+values(16,'В моменте','167');
+
 insert into compilations
 values (1,'camp1','2022-01-03');
 
@@ -159,6 +162,9 @@ values(5,8);
 
 insert into interval1 
 values(3,9);
+
+insert into interval1
+values(3,4);
 
 insert into interval2
 values(4,1);
