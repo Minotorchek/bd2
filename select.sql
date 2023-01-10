@@ -24,12 +24,12 @@ group by g.genre
 order by count(p.id) desc;
 
 select m.music, a.date1 from alboms as a
-left join music as m on m.id = a.id
+left join music as m on m.albom_id = a.id
 where (a.date1 >= '01.01.2019') and (a.date1 <= '31.12.2020');
 
 select a.name, AVG(m.duration)
 from alboms as a
-left join music m on m.id = a.id
+left join music m on m.albom_id = a.id
 group by a.name
 order by AVG(m.duration);
 
@@ -48,7 +48,7 @@ select distinct c.compilationname
 from compilations c 
 left join interval3 i3 on c.id = i3.compilations_id 
 left join music m  on m.id = i3.music_id
-left join alboms as a on a.id = m.id
+left join alboms as a on a.id = m.albom_id
 left join interval2 i2 on i2.albom_id = a.id
 left join performers p on p.id = i2.performers_id
 where p.name1 like '%%Джарахов%%'
@@ -80,19 +80,17 @@ order by p.name1;
 
 select distinct a.name
 from alboms as a
-left join music m on m.id = a.id
-where m.id in (
-    select id
+left join music m on m.albom_id = a.id
+where m.albom_id in (
+    select albom_id
     from music
-    group by id
+    group by albom_id
     having count(id) = (
         select count(id)
         from music
-        group by id
+        group by albom_id
         order by count
         limit 1
     )
 )
-order by a.name;
-
-#последнее не осилил сильно тороплюсь сделать все дз до закрытия модуля большая просьба если можете поставьте зачет
+order by a.name

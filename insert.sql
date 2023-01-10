@@ -65,52 +65,52 @@ insert into alboms
 values (8,'Перегрузка','2020.04.27');
 
 insert into music 
-values (1,'Весна','343');
+values (1,'Весна','8','343');
 
 insert into music
-values (2,'Химия','200');
+values (2,'Химия','7','200');
 
 insert into music
-values(3,'stay','205');
+values(3,'stay','2','205');
 
 insert into music
-values (4,'skit','200');
+values (4,'skit','2','200');
 
 insert into music
-values (5,'Telepathy','202');
+values (5,'Telepathy','3','202');
 
 insert into music
-values (6,'ПЬЁМ','220');
+values (6,'ПЬЁМ','1','220');
 
 insert into music
-values (7,'ПОКЕБОЛ','');
+values (7,'ПОКЕБОЛ','1','156');
 
 insert into music
-values (8,'ДЕЛОРИАН','202');
+values (8,'ДЕЛОРИАН','1','202');
 
 insert into music
-values (9,'Celebrate','189');
+values (9,'Celebrate','3','189');
 
 insert into music
-values (10,'Doughnut','264');
+values (10,'Doughnut','3','264');
 
 insert into music
-values (11,'Typa Girl','180');
+values (11,'Typa Girl','4','180');
 
 insert into music
-values (12,'Shut Down','176');
+values (12,'Shut Down','4','176');
 
 insert into music
-values (13,'NUMB','186');
+values (13,'NUMB','5','186');
 
 insert into music
-values (14,'SAD','167');
+values (14,'SAD','5','167');
 
 insert into music
-values (15,'my love','219');
+values (15,'my love','6','219');
 
 insert into music 
-values(16,'В моменте','167');
+values(16,'В моменте','7','167');
 
 insert into compilations
 values (1,'camp1','2022-01-03');

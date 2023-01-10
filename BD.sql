@@ -29,6 +29,7 @@ create table if not EXISTS interval2 (
 CREATE TABLE IF NOT EXISTS music (
 	id SERIAL PRIMARY KEY,
 	music VARCHAR(60) NOT NULL,
+	albom_id integer not null references alboms(id),
 	duration integer NOT NULL
 );
 	
